@@ -1,5 +1,7 @@
+import os
 import discord
 import speech_recognition as sr
+from dotenv import load_dotenv
 
-with open('.env') as f:
-    token = f.readlines()[1]
+load_dotenv()
+TOKEN = os.getenv('BOT_TOKEN')
